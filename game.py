@@ -1,3 +1,14 @@
+import random
+from gtts import gTTS
+import os
+import passlib
+import getpass
+p1=input('enter you name player 1 ')
+p2=input('enter your name player 2 ')
+count=0
+ps1=0
+ps2=0
+myobj=gTTS(text="Welcome "+str(p1)+ '&' +str(p2), lang='en',slow=True)
 myobj.save("w.mp3")
 os.system("mpg321 w.mp3")
 while True:
